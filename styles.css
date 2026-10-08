@@ -172,6 +172,15 @@ html:not(.js) .rv{opacity:1}
 .pk-txt{color:var(--mut);font-size:15px}
 .pk .btn,.pk-wide .btn{margin-top:auto;align-self:flex-start}
 .pk-wide{margin-top:18px}
+/* коммерция: мозаика из трёх объектов */
+.kom-ph{display:grid;grid-template-columns:1fr 1fr;gap:4px;background:var(--bg2)}
+.kom-ph figure{position:relative;margin:0;overflow:hidden}
+.kom-ph .kom-a{grid-column:1/-1}
+.kom-ph img{display:block;width:100%;height:100%;aspect-ratio:1/1;object-fit:cover}
+.kom-ph .kom-a img{aspect-ratio:16/11;object-position:50% 60%}
+.pk-wide:hover .kom-ph img{transform:none}
+.kom-ph figure:hover img{transform:scale(1.05)}
+.kom-ph figcaption{position:absolute;left:10px;bottom:10px;padding:6px 10px;border-radius:8px;background:rgba(18,20,22,.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#fff;font:600 11px/1 var(--fd);letter-spacing:.14em;text-transform:uppercase}
 @media(min-width:900px){
   .levels{grid-template-columns:repeat(3,1fr);gap:22px}
   .pk .pk-ph img{aspect-ratio:10/7}
@@ -179,6 +188,9 @@ html:not(.js) .rv{opacity:1}
   .pk-wide .pk-ph{flex:0 0 46%}
   .pk-wide .pk-ph img{height:100%;aspect-ratio:auto}
   .pk-wide .pk-body{padding:30px 32px}
+  .pk-wide .kom-ph{flex:0 0 62%;grid-template-columns:repeat(3,1fr)}
+  .pk-wide .kom-ph .kom-a{grid-column:auto}
+  .pk-wide .kom-ph img,.pk-wide .kom-ph .kom-a img{height:100%;aspect-ratio:4/5;object-position:50% 50%}
 }
 
 
@@ -290,7 +302,7 @@ html:not(.js) .rv{opacity:1}
   .hero-txt{transform:none;opacity:1}
   .btn,.link-arr,.pk::before,.why::before,.md,.md::backdrop{transition:none}
   .burger span,.menu,.sticky,.sticky.show,.arr,.nav a,.tel-hdr,.f input,.f select,.f textarea,.pk-ph img,.et img,.link-arr svg{transition:none}
-  .pk:hover .pk-ph img,.pk-wide:hover .pk-ph img,.et:hover img,.link-arr:hover svg{transform:none}
+  .pk:hover .pk-ph img,.pk-wide:hover .pk-ph img,.kom-ph figure:hover img,.et:hover img,.link-arr:hover svg{transform:none}
 }
 
 /* окно «Подробнее» */
