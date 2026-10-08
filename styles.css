@@ -304,7 +304,10 @@ html:not(.js) .rv{opacity:1}
 .md-t{font:600 clamp(28px,4vw,40px)/1.05 var(--fd);text-transform:uppercase;padding-right:48px}
 .md-t span{display:block;margin-top:6px;font-size:.6em;color:var(--laser);text-transform:none}
 .md-txt{color:var(--mut2)}
-.md-h{font:600 13px/1 var(--fd);letter-spacing:.16em;text-transform:uppercase;color:#fff;margin-top:6px}
+.md-h{display:flex;align-items:center;gap:12px;font:600 clamp(17px,1.9vw,20px)/1.1 var(--fd);letter-spacing:.08em;text-transform:uppercase;color:var(--laser);margin-top:12px;padding-top:16px;border-top:1px solid var(--line)}
+.md-h::before{content:"";flex:0 0 auto;width:28px;height:2px;background:var(--laser);box-shadow:0 0 6px rgba(122,201,67,.9)}
+.md-h-no{color:#fff}
+.md-h-no::before{background:rgba(255,255,255,.45);box-shadow:none}
 .md-li{list-style:none;display:grid;gap:8px;font-size:15px}
 .md-li.md-no li{color:var(--mut)}
 .md-li.md-no li::before{background:rgba(255,255,255,.3);box-shadow:none}
@@ -313,3 +316,4 @@ html:not(.js) .rv{opacity:1}
 .md-in > .btn{align-self:flex-start;margin-top:4px}
 @media(min-width:760px){.md-in{padding:36px 36px 32px}.md{width:min(100% - 48px,860px)}.md-li{grid-template-columns:1fr 1fr;gap:10px 28px}}
 .md-t:focus{outline:none}
+@media(max-width:420px){.md-h{font-size:16px;letter-spacing:.03em;gap:10px}.md-h::before{width:20px}}
