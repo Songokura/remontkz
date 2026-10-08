@@ -155,7 +155,7 @@ html:not(.js) .txt>*{opacity:1;transform:none}
 
 /* ---------- каталожные секции ---------- */
 .sec{position:relative;padding:clamp(64px,9vw,120px) 0;background:var(--ink);scroll-margin-top:var(--hdr)}
-.sec-vidy,.sec-pochemu,.sec-zayavka{background:var(--bg2)}
+.sec-pochemu,.sec-zayavka{background:var(--bg2)}
 .rv{opacity:0;transition:opacity .8s ease}
 .rv.in{opacity:1}
 html:not(.js) .rv{opacity:1}
@@ -188,17 +188,10 @@ html:not(.js) .rv{opacity:1}
   .pk-wide .pk-body{padding:30px 32px}
 }
 
-/* виды ремонта - список */
-.vidy{border-top:1px solid var(--line)}
-.vid{display:grid;grid-template-columns:1fr;gap:14px;padding:24px 0;border-bottom:1px solid var(--line);scroll-margin-top:calc(var(--hdr) + 12px);position:relative}
-.vid::before{content:"";position:absolute;left:0;top:-1px;height:2px;width:0;background:var(--laser);box-shadow:0 0 8px rgba(122,201,67,.8);transition:width .55s cubic-bezier(.2,.7,.2,1)}
-.vid:hover::before{width:100%}
-.vid h3{font:600 clamp(20px,2.4vw,28px)/1.1 var(--fd);text-transform:uppercase;color:#fff}
-.vid p{color:var(--mut);margin-top:8px;max-width:62ch}
-@media(min-width:760px){.vid{grid-template-columns:1fr auto;align-items:center;gap:24px;padding:28px 0}}
 
 /* этапы - лента */
 .sec-etapy{overflow:hidden}
+.sec-ceny + .sec-etapy{padding-top:0}
 .head-rail{display:grid;grid-template-columns:1fr;gap:18px;align-items:end}
 .arrows{display:flex;gap:10px}
 .arr{width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.22);background:var(--bg3);color:#fff;display:flex;align-items:center;justify-content:center;transition:border-color .25s,color .25s,opacity .25s}
@@ -323,7 +316,7 @@ html:not(.js) .rv{opacity:1}
   .lz-h img,.lz-v img,.lz-hero .lz-h img{transform:none;transition:none}
   .plate{transform:none;border-radius:0}
   .hero-txt{transform:none;opacity:1}
-  .btn,.link-arr,.pk::before,.vid::before,.why::before{transition:none}
+  .btn,.link-arr,.pk::before,.why::before{transition:none}
   .burger span,.menu,.sticky,.sticky.show,.arr,.nav a,.tel-hdr,.f input,.f select,.f textarea,.pk-ph img,.et img,.link-arr svg{transition:none}
   .pk:hover .pk-ph img,.pk-wide:hover .pk-ph img,.et:hover img,.link-arr:hover svg{transform:none}
 }
