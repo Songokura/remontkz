@@ -31,7 +31,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Golos+Text:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="styles.css?v=20261008-2">
+<link rel="stylesheet" href="styles.css?v=20261008-4">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -60,7 +60,7 @@
       {"@type": "Offer", "price": "45000", "priceCurrency": "KZT", "itemOffered": {"@type": "Service", "name": "Ремонт квартир STANDART", "url": "https://songokura.github.io/remontkz/#standart"}},
       {"@type": "Offer", "price": "55000", "priceCurrency": "KZT", "itemOffered": {"@type": "Service", "name": "Ремонт квартир COMFORT", "url": "https://songokura.github.io/remontkz/#comfort"}},
       {"@type": "Offer", "price": "85000", "priceCurrency": "KZT", "itemOffered": {"@type": "Service", "name": "Ремонт квартир PREMIUM", "url": "https://songokura.github.io/remontkz/#premium"}},
-      {"@type": "Offer", "price": "40000", "priceCurrency": "KZT", "itemOffered": {"@type": "Service", "name": "Ремонт коммерческих помещений", "url": "https://songokura.github.io/remontkz/#kommercheskie"}}
+      {"@type": "Offer", "price": "40000", "priceCurrency": "KZT", "itemOffered": {"@type": "Service", "name": "Ремонт коммерческих помещений", "url": "https://songokura.github.io/remontkz/#kommerc-cena"}}
     ]
   }
 }
@@ -83,9 +83,7 @@
     <button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
     <a class="logo" href="#top" aria-label="Remont.Kz - на главную"><img src="assets/brand/logo-stack.webp" width="400" height="239" alt="Remont.Kz"></a>
     <nav class="nav" aria-label="Разделы">
-      <a href="#kvartiry">Квартиры</a>
-      <a href="#kommercheskie">Коммерция</a>
-      <a href="#ceny">Цены</a>
+      <a href="#ceny">Услуги и цены</a>
       <a href="#etapy">Этапы</a>
       <a href="#pochemu">О нас</a>
       <a href="#kontakty">Контакты</a>
@@ -99,10 +97,7 @@
 <div class="menu" id="menu" hidden>
   <div class="menu-in">
     <nav class="menu-nav" aria-label="Меню">
-      <a href="#kvartiry">Ремонт квартир</a>
-      <a href="#novostroyka">В новостройке</a>
-      <a href="#kommercheskie">Коммерческие помещения</a>
-      <a href="#ceny">Цены и пакеты</a>
+      <a href="#ceny">Услуги и цены</a>
       <a href="#etapy">Этапы ремонта</a>
       <a href="#pochemu">Почему мы</a>
       <a href="#zayavka">Заявка</a>
@@ -145,7 +140,7 @@
         <p class="lead">Три пакета от 45 000 тг/м2, бесплатный замер и гарантия на работы 1 год. Менеджер отвечает в WhatsApp за 15 минут в рабочее время.</p>
         <div class="cta">
           <a class="btn btn-wa" href="https://wa.me/77713203757" target="_blank" rel="noopener" data-wa="hero"><svg width="18" height="18" aria-hidden="true" focusable="false"><use href="#ic-wa"/></svg><span>Рассчитать в WhatsApp</span></a>
-          <a class="btn btn-ghost" href="#ceny"><span>Цены и пакеты</span></a>
+          <a class="btn btn-ghost" href="#ceny"><span>Услуги и цены</span></a>
         </div>
       </div>
     </div>
@@ -158,114 +153,22 @@
   </section>
 </div>
 
-<!-- ПЛИТА: ремонт квартир -->
-<div class="pw" id="kvartiry">
-  <section class="plate plate-photo">
-    <div class="lz">
-      <div class="lz-rough lz-plaster"></div>
-      <img class="lz-h" src="assets/kvartiry.webp" width="1600" height="1066" alt="Гостиная после ремонта квартиры под ключ: серый диван, деревянные рейки, тёплый свет" loading="lazy" decoding="async">
-      <img class="lz-v" src="assets/kvartiry.webp" width="1600" height="1066" alt="" aria-hidden="true" loading="lazy" decoding="async">
-      <i class="lz-line lh lt"></i><i class="lz-line lh lb"></i><i class="lz-line lv ll"></i><i class="lz-line lv lr"></i>
-      <div class="scrim"></div>
-    </div>
-    <div class="wrap txt plate-txt">
-      <p class="kicker"><i></i>Квартиры</p>
-      <h2 class="h2">Ремонт квартир под ключ</h2>
-      <p class="lead">Новостройка или вторичка: от черновых работ до чистовой отделки. Три пакета, цена за м2 известна до старта.</p>
-      <p class="price"><b>от 45 000</b> тг/м2</p>
-      <div class="cta">
-        <a class="btn btn-wa" href="https://wa.me/77713203757" target="_blank" rel="noopener" data-wa="kvartiry"><svg width="18" height="18" aria-hidden="true" focusable="false"><use href="#ic-wa"/></svg><span>Узнать цену</span></a>
-        <a class="link-arr" href="#ceny"><span>Пакеты STANDART, COMFORT, PREMIUM</span><svg width="18" height="18" aria-hidden="true" focusable="false"><use href="#ic-arr"/></svg></a>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ПЛИТА: ремонт в новостройке -->
-<div class="pw" id="novostroyka">
-  <section class="plate plate-photo">
-    <div class="lz">
-      <div class="lz-rough lz-plaster"></div>
-      <img class="lz-h" src="assets/novostroyka.webp" width="1600" height="1068" alt="Квартира в новостройке после ремонта: ровные белые стены, тёмный пол, окно" loading="lazy" decoding="async">
-      <img class="lz-v" src="assets/novostroyka.webp" width="1600" height="1068" alt="" aria-hidden="true" loading="lazy" decoding="async">
-      <i class="lz-line lh lt"></i><i class="lz-line lh lb"></i><i class="lz-line lv ll"></i><i class="lz-line lv lr"></i>
-      <div class="scrim"></div>
-    </div>
-    <div class="wrap txt plate-txt">
-      <p class="kicker"><i></i>Новостройки</p>
-      <h2 class="h2">Ремонт в новостройке</h2>
-      <p class="lead">Голые стены превращаются в квартиру, готовую к заселению: стяжка, электрика, штукатурка, чистовая отделка.</p>
-      <p class="price"><b>от 45 000</b> тг/м2</p>
-      <div class="cta">
-        <a class="btn btn-wa" href="https://wa.me/77713203757" target="_blank" rel="noopener" data-wa="novostroyka"><svg width="18" height="18" aria-hidden="true" focusable="false"><use href="#ic-wa"/></svg><span>Узнать цену</span></a>
-        <a class="link-arr" href="#zayavka"><span>Бесплатный замер</span><svg width="18" height="18" aria-hidden="true" focusable="false"><use href="#ic-arr"/></svg></a>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ПЛИТА: коммерческие помещения -->
-<div class="pw" id="kommercheskie">
-  <section class="plate plate-photo">
-    <div class="lz">
-      <div class="lz-rough lz-plaster"></div>
-      <img class="lz-h" src="assets/kommerc.webp" width="1600" height="1066" alt="Кафе после ремонта коммерческого помещения: плитка шахматкой, тёмные стены, подвесные светильники" loading="lazy" decoding="async">
-      <img class="lz-v" src="assets/kommerc.webp" width="1600" height="1066" alt="" aria-hidden="true" loading="lazy" decoding="async">
-      <i class="lz-line lh lt"></i><i class="lz-line lh lb"></i><i class="lz-line lv ll"></i><i class="lz-line lv lr"></i>
-      <div class="scrim"></div>
-    </div>
-    <div class="wrap txt plate-txt">
-      <p class="kicker"><i></i>Бизнесу</p>
-      <h2 class="h2">Ремонт коммерческих помещений</h2>
-      <p class="lead">Офисы, магазины, кафе, салоны. График работ под дату открытия, одна бригада ведёт объект до сдачи.</p>
-      <p class="price"><b>от 40 000</b> тг/м2</p>
-      <div class="cta">
-        <a class="btn btn-wa" href="https://wa.me/77713203757" target="_blank" rel="noopener" data-wa="kommerc"><svg width="18" height="18" aria-hidden="true" focusable="false"><use href="#ic-wa"/></svg><span>Узнать цену</span></a>
-        <a class="link-arr" href="#kak"><span>Как проходит работа</span><svg width="18" height="18" aria-hidden="true" focusable="false"><use href="#ic-arr"/></svg></a>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ПЛИТА: свои бригады -->
-<div class="pw" id="brigady">
-  <section class="plate plate-photo">
-    <div class="lz">
-      <div class="lz-rough lz-plaster"></div>
-      <img class="lz-h" src="assets/brigady.webp" width="1600" height="1066" alt="Мастер в каске укладывает стяжку пола в квартире" loading="lazy" decoding="async">
-      <img class="lz-v" src="assets/brigady.webp" width="1600" height="1066" alt="" aria-hidden="true" loading="lazy" decoding="async">
-      <i class="lz-line lh lt"></i><i class="lz-line lh lb"></i><i class="lz-line lv ll"></i><i class="lz-line lv lr"></i>
-      <div class="scrim"></div>
-    </div>
-    <div class="wrap txt plate-txt">
-      <p class="kicker"><i></i>Мастера</p>
-      <h2 class="h2">Свои бригады, а не подрядчики</h2>
-      <p class="lead">5 бригад в составе компании: электрики, штукатуры, плиточники, маляры. Больше 100 сданных объектов за 5 лет.</p>
-      <div class="cta">
-        <a class="btn btn-wa" href="https://wa.me/77713203757" target="_blank" rel="noopener" data-wa="zamer"><svg width="18" height="18" aria-hidden="true" focusable="false"><use href="#ic-wa"/></svg><span>Вызвать на замер</span></a>
-        <a class="link-arr" href="#pochemu"><span>Почему выбирают нас</span><svg width="18" height="18" aria-hidden="true" focusable="false"><use href="#ic-arr"/></svg></a>
-      </div>
-    </div>
-  </section>
-</div>
-
 <!-- ЦЕНЫ -->
 <section class="sec sec-ceny" id="ceny">
   <div class="wrap">
     <div class="head rv">
-      <p class="kicker"><i></i>Цены</p>
-      <h2 class="h2">Три пакета ремонта квартир и коммерция</h2>
-      <p class="lead">Цена за м2 работ фиксируется после бесплатного замера. Какой пакет подойдёт вашей квартире, подскажет менеджер.</p>
+      <p class="kicker"><i></i>Услуги и цены</p>
+      <h2 class="h2">Четыре вида ремонта под ключ</h2>
+      <p class="lead">Цена за м2 работ фиксируется после бесплатного замера.</p>
     </div>
     <div class="levels">
-      <i class="levels-line" aria-hidden="true"></i>
       <article class="pk rv" id="standart">
         <div class="pk-ph"><img src="assets/pk-standart.webp" width="1000" height="700" alt="Пакет STANDART: светлая комната с ровными стенами и паркетом" loading="lazy" decoding="async"></div>
         <div class="pk-body">
           <h3 class="pk-name">Standart</h3>
           <p class="pk-price"><b>от 45 000</b> тг/м2</p>
           <p class="pk-txt">Базовый ремонт для сдачи в аренду или быстрого заселения.</p>
-          <a class="btn btn-wa btn-sm" href="https://wa.me/77713203757" target="_blank" rel="noopener" data-wa="standart"><svg width="16" height="16" aria-hidden="true" focusable="false"><use href="#ic-wa"/></svg><span>Узнать цену</span></a>
+          <button class="btn btn-ghost btn-sm" type="button" data-more="md-standart" aria-haspopup="dialog"><span>Подробнее</span><svg width="16" height="16" aria-hidden="true" focusable="false"><use href="#ic-arr"/></svg></button>
         </div>
       </article>
       <article class="pk rv" id="comfort">
@@ -274,7 +177,7 @@
           <h3 class="pk-name">Comfort</h3>
           <p class="pk-price"><b>от 55 000</b> тг/м2</p>
           <p class="pk-txt">Ремонт для жизни: больше инженерных работ и сложных решений по отделке.</p>
-          <a class="btn btn-wa btn-sm" href="https://wa.me/77713203757" target="_blank" rel="noopener" data-wa="comfort"><svg width="16" height="16" aria-hidden="true" focusable="false"><use href="#ic-wa"/></svg><span>Узнать цену</span></a>
+          <button class="btn btn-ghost btn-sm" type="button" data-more="md-comfort" aria-haspopup="dialog"><span>Подробнее</span><svg width="16" height="16" aria-hidden="true" focusable="false"><use href="#ic-arr"/></svg></button>
         </div>
       </article>
       <article class="pk rv" id="premium">
@@ -283,7 +186,7 @@
           <h3 class="pk-name">Premium</h3>
           <p class="pk-price"><b>от 85 000</b> тг/м2</p>
           <p class="pk-txt">Дизайнерский ремонт: сложная геометрия, премиальные материалы, детали.</p>
-          <a class="btn btn-wa btn-sm" href="https://wa.me/77713203757" target="_blank" rel="noopener" data-wa="premium"><svg width="16" height="16" aria-hidden="true" focusable="false"><use href="#ic-wa"/></svg><span>Узнать цену</span></a>
+          <button class="btn btn-ghost btn-sm" type="button" data-more="md-premium" aria-haspopup="dialog"><span>Подробнее</span><svg width="16" height="16" aria-hidden="true" focusable="false"><use href="#ic-arr"/></svg></button>
         </div>
       </article>
     </div>
@@ -293,7 +196,7 @@
         <h3 class="pk-name">Коммерческие помещения</h3>
         <p class="pk-price"><b>от 40 000</b> тг/м2</p>
         <p class="pk-txt">Офисы, магазины, кафе, салоны и медицинские кабинеты. Смета по техзаданию, работы по графику открытия.</p>
-        <a class="btn btn-wa btn-sm" href="https://wa.me/77713203757" target="_blank" rel="noopener" data-wa="kommerc"><svg width="16" height="16" aria-hidden="true" focusable="false"><use href="#ic-wa"/></svg><span>Узнать цену</span></a>
+        <a class="btn btn-wa btn-sm" href="https://wa.me/77713203757" target="_blank" rel="noopener" data-wa="kommerc"><svg width="16" height="16" aria-hidden="true" focusable="false"><use href="#ic-wa"/></svg><span>Рассчитать</span></a>
       </div>
     </article>
   </div>
@@ -335,35 +238,17 @@
       <h2 class="h2">Remont.Kz: 5 лет ремонта в Астане</h2>
     </div>
     <ul class="nums rv" aria-label="Цифры компании">
-      <li><b>100<i>+</i></b><span>сданных объектов</span></li>
-      <li><b>100</b><span>клиентов, квартиры и бизнес</span></li>
-      <li><b>5</b><span>своих бригад</span></li>
+      <li><b>200<i>+</i></b><span>сданных объектов</span></li>
+      <li><b>200</b><span>клиентов, квартиры и бизнес</span></li>
+      <li><b>10</b><span>своих бригад</span></li>
       <li><b>1 <i>год</i></b><span>гарантии на работы</span></li>
     </ul>
     <div class="bento">
-      <figure class="bento-ph rv"><img src="assets/team.webp" width="900" height="1200" alt="Бригада мастеров в белой спецодежде на объекте" loading="lazy" decoding="async"><figcaption>Мастера Remont.Kz на объекте</figcaption></figure>
       <div class="why rv"><h3>Лучшие цены</h3><p>Считаем по м2 и фиксируем после замера. Без доплат «по ходу».</p></div>
-      <div class="why rv"><h3>Свои мастера</h3><p>5 бригад в составе компании, один ответственный за объект.</p></div>
+      <div class="why rv"><h3>Свои мастера</h3><p>10 бригад в составе компании, один ответственный за объект.</p></div>
       <div class="why rv"><h3>Короткие сроки</h3><p>Этапы идут без простоев: следующая бригада выходит сразу за предыдущей.</p></div>
       <div class="why rv"><h3>Гарантия 1 год</h3><p>На все выполненные работы, прописана в договоре.</p></div>
     </div>
-  </div>
-</section>
-
-<!-- КАК РАБОТАЕМ -->
-<section class="sec sec-kak" id="kak">
-  <div class="wrap">
-    <div class="head rv">
-      <p class="kicker"><i></i>Порядок работы</p>
-      <h2 class="h2">От заявки до ключей</h2>
-    </div>
-    <ol class="steps">
-      <li class="rv"><b>01</b><div><h3>Заявка</h3><p>Звонок, WhatsApp или форма. Дидар отвечает за 15 минут в рабочее время.</p></div></li>
-      <li class="rv"><b>02</b><div><h3>Бесплатный замер</h3><p>Выезжаем на объект, смотрим состояние, обсуждаем пожелания.</p></div></li>
-      <li class="rv"><b>03</b><div><h3>Смета и договор</h3><p>Цена за м2 по выбранному пакету и сроки прописаны до старта.</p></div></li>
-      <li class="rv"><b>04</b><div><h3>Ремонт</h3><p>Свои бригады ведут объект по этапам, вы получаете отчёты о ходе работ.</p></div></li>
-      <li class="rv"><b>05</b><div><h3>Сдача и гарантия</h3><p>Принимаете работу по чек-листу, гарантия 1 год.</p></div></li>
-    </ol>
   </div>
 </section>
 
@@ -437,16 +322,50 @@
 <footer class="foot">
   <div class="wrap foot-in">
     <a class="logo logo-foot" href="#top" aria-label="Remont.Kz - наверх"><img src="assets/brand/logo-full.webp" width="480" height="345" alt="Remont.Kz - ремонт квартир и коммерческих помещений"></a>
-    <p class="foot-legal">ИП, ИИН 890919350751. Ремонт квартир и коммерческих помещений в Астане.</p>
+    <p class="foot-legal">Ремонт квартир и коммерческих помещений в Астане.</p>
     <p class="foot-copy">Remont.Kz, Астана. <span id="year">2026</span></p>
   </div>
 </footer>
+
+<dialog class="md" id="md-standart" aria-labelledby="md-standart-t">
+  <div class="md-in">
+    <button class="md-x" type="button" aria-label="Закрыть"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    <p class="pk-name">Пакет</p>
+    <h3 class="md-t" id="md-standart-t" tabindex="-1" autofocus>STANDART <span>от 45 000 тг/м2</span></h3>
+    <p class="md-txt">Базовый ремонт для сдачи в аренду или быстрого заселения.</p>
+    <ul class="md-li"><li>Демонтаж и вывоз мусора</li><li>Электрика и сантехника по точкам</li><li>Стены и потолки под покраску или обои</li><li>Ламинат, плитка в санузле</li><li>Гарантия на работы 1 год</li></ul>
+    <div class="md-gal"><div class="md-ph"><span>Фото объекта</span><small>STANDART</small></div><div class="md-ph"><span>Фото объекта</span><small>STANDART</small></div><div class="md-ph"><span>Фото объекта</span><small>STANDART</small></div></div>
+    <a class="btn btn-wa" href="https://wa.me/77713203757" target="_blank" rel="noopener" data-wa="standart"><svg width="18" height="18" aria-hidden="true" focusable="false"><use href="#ic-wa"/></svg><span>Рассчитать в WhatsApp</span></a>
+  </div>
+</dialog>
+<dialog class="md" id="md-comfort" aria-labelledby="md-comfort-t">
+  <div class="md-in">
+    <button class="md-x" type="button" aria-label="Закрыть"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    <p class="pk-name">Пакет</p>
+    <h3 class="md-t" id="md-comfort-t" tabindex="-1" autofocus>COMFORT <span>от 55 000 тг/м2</span></h3>
+    <p class="md-txt">Ремонт для жизни: больше инженерных работ и сложных решений по отделке.</p>
+    <ul class="md-li"><li>Новая разводка электрики и труб</li><li>Стены в уровень под покраску</li><li>Потолки из гипсокартона с подсветкой</li><li>Тёплый пол в санузле</li><li>Гарантия на работы 1 год</li></ul>
+    <div class="md-gal"><div class="md-ph"><span>Фото объекта</span><small>COMFORT</small></div><div class="md-ph"><span>Фото объекта</span><small>COMFORT</small></div><div class="md-ph"><span>Фото объекта</span><small>COMFORT</small></div></div>
+    <a class="btn btn-wa" href="https://wa.me/77713203757" target="_blank" rel="noopener" data-wa="comfort"><svg width="18" height="18" aria-hidden="true" focusable="false"><use href="#ic-wa"/></svg><span>Рассчитать в WhatsApp</span></a>
+  </div>
+</dialog>
+<dialog class="md" id="md-premium" aria-labelledby="md-premium-t">
+  <div class="md-in">
+    <button class="md-x" type="button" aria-label="Закрыть"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    <p class="pk-name">Пакет</p>
+    <h3 class="md-t" id="md-premium-t" tabindex="-1" autofocus>PREMIUM <span>от 85 000 тг/м2</span></h3>
+    <p class="md-txt">Дизайнерский ремонт: сложная геометрия, премиальные материалы, детали.</p>
+    <ul class="md-li"><li>Ремонт по дизайн-проекту</li><li>Сложные потолки и световые линии</li><li>Скрытые двери и теневой плинтус</li><li>Крупноформатная плитка, паркет</li><li>Гарантия на работы 1 год</li></ul>
+    <div class="md-gal"><div class="md-ph"><span>Фото объекта</span><small>PREMIUM</small></div><div class="md-ph"><span>Фото объекта</span><small>PREMIUM</small></div><div class="md-ph"><span>Фото объекта</span><small>PREMIUM</small></div></div>
+    <a class="btn btn-wa" href="https://wa.me/77713203757" target="_blank" rel="noopener" data-wa="premium"><svg width="18" height="18" aria-hidden="true" focusable="false"><use href="#ic-wa"/></svg><span>Рассчитать в WhatsApp</span></a>
+  </div>
+</dialog>
 
 <nav class="sticky" id="sticky" aria-label="Быстрая связь">
   <a href="tel:+77713203757"><svg width="18" height="18" aria-hidden="true" focusable="false"><use href="#ic-tel"/></svg><span>Позвонить</span></a>
   <a class="s-wa" href="https://wa.me/77713203757" target="_blank" rel="noopener" data-wa="default"><svg width="18" height="18" aria-hidden="true" focusable="false"><use href="#ic-wa"/></svg><span>WhatsApp</span></a>
 </nav>
 
-<script src="script.js?v=20261008-2" defer></script>
+<script src="script.js?v=20261008-4" defer></script>
 </body>
 </html>

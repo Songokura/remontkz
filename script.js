@@ -13,8 +13,6 @@
   var WA = {
     "default": "Здравствуйте! Пишу с сайта Remont.Kz. Нужна консультация по ремонту.",
     hero: "Здравствуйте! Нужен расчёт ремонта квартиры в Астане. Площадь и адрес: ",
-    kvartiry: "Здравствуйте! Нужен ремонт квартиры под ключ. Площадь, район и состояние квартиры: ",
-    novostroyka: "Здравствуйте! Нужен ремонт квартиры в новостройке. ЖК, площадь и состояние от застройщика: ",
     kommerc: "Здравствуйте! Нужен ремонт коммерческого помещения. Тип помещения, площадь и желаемый срок открытия: ",
     standart: "Здравствуйте! Интересует пакет STANDART (от 45 000 тг/м2). Площадь и адрес квартиры: ",
     comfort: "Здравствуйте! Интересует пакет COMFORT (от 55 000 тг/м2). Площадь и адрес квартиры: ",
@@ -231,4 +229,15 @@
   if (doc.fonts && doc.fonts.ready) doc.fonts.ready.then(function () { fitText(); update(); });
   if (doc.readyState === "complete") start(); else W.addEventListener("load", start);
   update();
+  /* ---------- окна «Подробнее» у пакетов ---------- */
+  [].forEach.call(doc.querySelectorAll("[data-more]"), function (b) {
+    var d = doc.getElementById(b.getAttribute("data-more"));
+    if (!d || !d.showModal) return;
+    b.addEventListener("click", function () { d.showModal(); });
+  });
+  [].forEach.call(doc.querySelectorAll("dialog.md"), function (d) {
+    var x = d.querySelector(".md-x");
+    if (x) x.addEventListener("click", function () { d.close(); });
+    d.addEventListener("click", function (e) { if (e.target === d) d.close(); });
+  });
 })();
