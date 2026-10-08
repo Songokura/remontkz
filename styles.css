@@ -66,9 +66,10 @@ html{scroll-padding-top:calc(var(--hdr) + 12px)}
 body.menu-open .burger span:first-child{transform:translateY(4px) rotate(45deg)}
 body.menu-open .burger span:last-child{transform:translateY(-4px) rotate(-45deg)}
 .logo{position:relative;z-index:2;display:inline-flex;align-items:center;text-decoration:none}
-.logo{background:#fff;border-radius:10px;padding:7px 11px}
-.logo img{display:block;height:24px;width:auto}
-@media (min-width:1000px){.logo img{height:28px}}
+.logo{background:#fff;border-radius:10px;padding:4px 10px}
+.logo img{display:block;height:52px;width:auto}
+.logo-foot{padding:14px 18px;border-radius:14px}
+.logo-foot img{height:120px}
 .nav{display:none;margin-left:auto;gap:4px}
 .nav a{font:500 13px/1 var(--fd);letter-spacing:.06em;text-transform:uppercase;color:var(--mut2);text-decoration:none;padding:10px 12px;border-radius:999px;transition:color .2s,background .2s}
 .nav a:hover{color:#fff;background:rgba(255,255,255,.06)}
