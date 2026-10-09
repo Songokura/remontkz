@@ -126,7 +126,8 @@ html:not(.js) .txt>*{opacity:1;transform:none}
 .lv{top:0;bottom:0;width:2px;transform:scaleY(var(--ld))}
 .ll{left:calc(50%*(1 - var(--open)));margin-left:-1px}
 .lr{right:calc(50%*(1 - var(--open)));margin-right:-1px}
-.scrim{position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(to top,rgba(18,20,22,.92) 0%,rgba(18,20,22,.66) 34%,rgba(18,20,22,.18) 68%,rgba(18,20,22,.05) 100%),linear-gradient(to right,rgba(18,20,22,.4),rgba(18,20,22,0) 55%)}
+.scrim{position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(to top,rgba(18,20,22,.88) 0%,rgba(18,20,22,.62) 30%,rgba(18,20,22,.22) 52%,rgba(18,20,22,0) 72%),linear-gradient(to right,rgba(18,20,22,.22),rgba(18,20,22,0) 50%)}
+@media (max-width:760px){.scrim{background:linear-gradient(to top,rgba(18,20,22,.9) 0%,rgba(18,20,22,.66) 40%,rgba(18,20,22,.3) 62%,rgba(18,20,22,0) 85%)}}
 
 /* герой */
 .lz-hero .lz-h img,.lz-hero .lz-v img{transform:scale(calc(1.02 + .12*var(--stay)))}
